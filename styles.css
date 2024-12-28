@@ -37,6 +37,11 @@ ul.navbar .logo {
     flex-grow: 1;  
 }
 
+ul.navbar a.menu-item:hover{
+    background-color: #df840e;  
+    border-radius: 5px;    
+}
+
 ul.navbar .logo a {
     font-size: 24px; 
     background: linear-gradient(to right, rgb(221, 107, 46), rgb(234, 40, 50)); 
@@ -48,11 +53,14 @@ ul.navbar .logo a {
     font-family: 'Arial', sans-serif; 
     display: inline-block;
     padding: 10px 20px;
+    transition: transform 0.3s,color 0.3s,text-shadow 0.3s ,text-shadow 0.3s;
 }
 
 ul.navbar .logo a:hover {
     color: #0e856d; 
     text-decoration: none; 
+    transform: scale(1.5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .hire-btn {
@@ -399,6 +407,7 @@ ul.navbar .logo a:hover {
     font-size: 1.8rem;
     font-weight: 600;
     margin: 15px 0;
+    color: #0e856d;
   }
   
   .project-description {
@@ -414,7 +423,7 @@ ul.navbar .logo a:hover {
   
   .project-technologies {
     font-size: 1.5rem;
-    color: #999; 
+    color: #19c5a3; 
     margin-bottom: 15px;
   }
   
@@ -527,5 +536,39 @@ html {
 }
 
 
+.container2 {
+    display: flex;
+  align-items: center; 
+  justify-content: flex-start; 
+  gap: 30px; 
+  padding: 20px;
+}
 
 
+.logo-item2 {
+    flex: 0 1 calc(33.333% - 30px); 
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.logo-item2 i {
+    color: #e2e2e2; 
+    font-size: 3rem; 
+    margin-bottom: 10px;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.logo-item2:hover i {
+    
+    transform: scale(1.5); 
+    background: linear-gradient(to right, rgb(241, 169, 34), rgb(34, 169, 241)); 
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; 
+}
+
+.logo-item2 p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff; 
+}
