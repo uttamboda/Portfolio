@@ -9,8 +9,15 @@ nav {
     background-color: #050303; 
     padding: 10px;
     margin-top: 20px;
+    /* height: 80px;  */
+    /* overflow: hidden; */
+    /* transition: height 2s ease-out; */
 }
 
+
+/* nav:hover{
+    height: 50px;
+} */
 ul.navbar {
     list-style-type: none;
     display: flex; 
@@ -571,4 +578,56 @@ html {
     font-size: 1rem;
     font-weight: 500;
     color: #fff; 
+}
+
+footer {
+    background-color: #333; 
+    color: white; 
+    padding: 20px 0; 
+    text-align: right; 
+    font-size: 14px;
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-links {
+    margin-top: 10px; 
+    margin-right: 30px;
+}
+
+footer .footer-links a {
+    color: #fff; 
+    text-decoration: none; 
+    margin: 0 10px; 
+    font-size: 20px; 
+}
+
+footer .footer-links a:hover {
+    text-decoration:underline;
+}
+
+footer p {
+    margin: 0; 
+    text-align: left;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 12px; 
+        padding: 15px 0; 
+    }
+
+    footer .footer-links {
+        margin-top: 15px; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    footer .footer-links a {
+        margin: 5px 0; 
+    }
 }
