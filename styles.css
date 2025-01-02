@@ -6,24 +6,18 @@
 }
 
 nav {
-    background-color: #050303; 
+    background-color: #050303;
     padding: 10px;
     margin-top: 20px;
-    /* height: 80px;  */
-    /* overflow: hidden; */
-    /* transition: height 2s ease-out; */
 }
 
-
-/* nav:hover{
-    height: 50px;
-} */
 ul.navbar {
     list-style-type: none;
-    display: flex; 
-    justify-content: space-between;  
-    align-items: center;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0;
+    flex-wrap: wrap; 
 }
 
 ul.navbar li {
@@ -41,31 +35,31 @@ ul.navbar li a {
 }
 
 ul.navbar .logo {
-    flex-grow: 1;  
+    flex-grow: 1;
 }
 
-ul.navbar a.menu-item:hover{
-    background-color: #df840e;  
-    border-radius: 5px;    
+ul.navbar a.menu-item:hover {
+    background-color: #df840e;
+    border-radius: 5px;
 }
 
 ul.navbar .logo a {
-    font-size: 24px; 
-    background: linear-gradient(to right, rgb(221, 107, 46), rgb(234, 40, 50)); 
-    -webkit-background-clip: text; 
+    font-size: 24px;
+    background: linear-gradient(to right, rgb(221, 107, 46), rgb(234, 40, 50));
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bold; 
-    text-transform: uppercase; 
-    letter-spacing: 2px; 
-    font-family: 'Arial', sans-serif; 
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Arial', sans-serif;
     display: inline-block;
     padding: 10px 20px;
-    transition: transform 0.3s,color 0.3s,text-shadow 0.3s ,text-shadow 0.3s;
+    transition: transform 0.3s, color 0.3s, text-shadow 0.3s;
 }
 
 ul.navbar .logo a:hover {
-    color: #0e856d; 
-    text-decoration: none; 
+    color: #0e856d;
+    text-decoration: none;
     transform: scale(1.5);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -73,7 +67,7 @@ ul.navbar .logo a:hover {
 .hire-btn {
     display: inline-block;
     padding: 12px 30px;
-    background-color: #d65b13; 
+    background-color: #d65b13;
     color: white;
     font-size: 18px;
     text-decoration: none;
@@ -82,7 +76,7 @@ ul.navbar .logo a:hover {
 }
 
 .hire-btn:hover {
-    background-color: #4b796b; 
+    background-color: #4b796b;
     transform: scale(1.05);
 }
 
@@ -101,37 +95,29 @@ ul.navbar .logo a:hover {
     color: #555;
 }
 
-.header{
-   
-  color: rgb(160, 160, 165);              
-  padding: 100px;                
-  font-size: 40px;             
-  
-} 
-
- .intro{
- padding: 10px;
- text-align: left;
+.header {
+    color: rgb(160, 160, 165);
+    padding: 100px;
+    font-size: 40px;
 }
-.owner{
- padding: 10px;
- text-align: left;
 
+.intro,
+.owner {
+    padding: 10px;
+    text-align: left;
 }
-.role{
- padding: 10px;
- background: linear-gradient(to right, rgb(241, 169, 34), rgb(34, 169, 241)); /* Two colors */
- -webkit-background-clip: text; /* Clips gradient to text */
- -webkit-text-fill-color: transparent; /* Makes gradient visible inside text */
- text-align: left;
 
-
-}  
+.role {
+    padding: 10px;
+    background: linear-gradient(to right, rgb(241, 169, 34), rgb(34, 169, 241));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+}
 
 .social-links {
     margin-top: 20px;
     text-align: left;
-
 }
 
 .social-links a {
@@ -145,25 +131,74 @@ ul.navbar .logo a:hover {
 }
 
 .social-links a i {
-    margin-right: 8px; 
+    margin-right: 8px;
 }
 
 .social-links a:hover {
-    color: #4f83b7; 
+    color: #4f83b7;
 }
-
 
 @media (max-width: 768px) {
     .header {
         padding: 30px;
+        font-size: 28px;
     }
 
     .header .role {
-        font-size: 28px;
+        font-size: 22px;
     }
 
     .social-links a {
         font-size: 18px;
+    }
+
+    ul.navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul.navbar li {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    ul.navbar .logo a {
+        font-size: 20px;
+    }
+
+    .hire-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: auto; 
+        padding: 40px 20px; 
+    }
+
+    .hero .photo img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .hero .hero-content h1 {
+        font-size: 2rem; 
+    }
+
+    .hero .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .hire-btn2 {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .photo img {
+        max-width: 400px; 
+        height: auto;
     }
 }
 
@@ -176,80 +211,61 @@ ul.navbar .logo a:hover {
     text-align: center;
     position: relative;
     background: #272727;
+    padding: 0 50px;
 }
-.hire{
+
+.hire {
     text-align: left;
 }
 
-.downlead-cv {
-    text-decoration: none;           
-    display: inline-block;           
-    padding: 15px 30px;              
-    background-color: transparent;       
-    color: white;                    
-    font-size: 18px;                
-    font-weight: bold;              
-    border-radius: 5px;              
-    transition: all 0.3s ease; 
+.downlead-cv,
+.hire-btn2 {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
     border: 1px solid rgb(252, 248, 248);
 }
 
-.downlead-cv:hover {
-    background-color: #c5d2df;       
-    transform: scale(1.05);           
-}
-
-.downlead-cv:focus {
-    outline: none;                   
-    box-shadow: 0 0 5px rgba(218, 218, 218, 0.5); 
-}
-
-.hire-btn2{
-    text-decoration: none;           
-    display: inline-block;           
-    padding: 15px 30px;              
-    background-color: transparent;       
-    color: white;                    
-    font-size: 18px;                
-    font-weight: bold;              
-    border-radius: 5px;              
-    transition: all 0.3s ease; 
-    border: 1px solid rgb(252, 248, 248);
-}
-
+.downlead-cv:hover,
 .hire-btn2:hover {
-    background-color: #c5d2df;       
-    transform: scale(1.05);           
+    background-color: #c5d2df;
+    transform: scale(1.05);
 }
 
-.hire-btn2:focus{
-    outline: none;                   
-    box-shadow: 0 0 5px rgba(218, 218, 218, 0.5); 
+.downlead-cv:focus,
+.hire-btn2:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(218, 218, 218, 0.5);
 }
 
-.update{
+.update {
     margin-top: 20px;
 }
 
-.photo{
+.photo {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.photo img{
-    width: 550px; 
-    height: 550px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-    /* border: 5px solid #050303; */
-    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; 
+.photo img {
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
 .photo img:hover {
-    transform: scale(1.1); 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     filter: blur(0.5px);
 }
 
