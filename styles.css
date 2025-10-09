@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: white;
+}
 
 nav {
     background-color: #050303;
