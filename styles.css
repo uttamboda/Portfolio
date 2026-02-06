@@ -650,3 +650,120 @@ footer p {
         margin: 5px 0; 
     }
 }
+
+/* ================= EXPERIENCE SECTION ================= */
+
+.experience {
+    padding: 60px 20px;
+    background-color: #272727; /* same as projects & contact */
+    color: #a8a4a4;
+    text-align: center;
+}
+
+.experience .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+/* Container */
+.experience-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Card */
+.experience-card {
+    background-color: #222;
+    border-radius: 12px;
+    padding: 30px 35px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+/* Titles */
+.role-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #0e856d; /* same green as project title */
+}
+
+.company-name {
+    font-size: 1.1rem;
+    color: #19c5a3;
+    margin-top: 5px;
+}
+
+.duration {
+    font-size: 0.95rem;
+    color: #9a9a9a;
+    margin-bottom: 15px;
+}
+
+/* Bullet points */
+.experience-points {
+    padding-left: 18px;
+    margin-top: 10px;
+}
+
+.experience-points li {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #cccccc;
+    margin-bottom: 8px;
+}
+
+/* Tech stack */
+.tech-stack {
+    margin-top: 20px;
+}
+
+.tech-stack span {
+    display: inline-block;
+    padding: 6px 14px;
+    margin: 6px 6px 0 0;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #ffffff;
+    background: linear-gradient(
+        to right,
+        rgb(241, 169, 34),
+        rgb(34, 169, 241)
+    );
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.tech-stack span:hover {
+    transform: scale(1.1);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    .experience {
+        padding: 40px 15px;
+    }
+
+    .experience-card {
+        padding: 25px;
+    }
+
+    .role-title {
+        font-size: 1.4rem;
+    }
+
+    .company-name {
+        font-size: 1rem;
+    }
+}
